@@ -1,7 +1,19 @@
+// Include the Adafruit library for the LCD
+#include <LiquidCrystal.h>
+
 
 // Setup values for Capacitive Soil Sensor, this particular sensor has a range of 424 to 796
 const int dry = 796; // Value for dry sensor, the highest possible value the sensor can measure
 const int wet = 424; // Value for wet sensor, the lowest possible value the sensor can measure
+const int rs = 12; // LCD pin rs connected to Arduino digital pin 12
+const int vo = 6; // LCD pin vo connected to Arduino digital pin 6
+const int e = 11; // LCD pin e connected to Arduino digital pin 11
+const int d4 = 5; // LCD pin d4 connected to Arduino digital pin 5
+const int d5 = 4; // LCD pin d5 connected to Arduino digital pin 4
+const int d6 = 3; // LCD pin d6 connected to Arduino digital pin 3
+const int d7 = 2; // LCD pin d7 connected to Arduino digital pin 2
+
+
 
 // Setup prepares and starts the program
 void setup() {
