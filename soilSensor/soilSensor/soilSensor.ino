@@ -5,6 +5,8 @@
 // Setup values for Capacitive Soil Sensor, this particular sensor has a range of 424 to 796
 const int dry = 796; // Value for dry sensor, the highest possible value the sensor can measure
 const int wet = 424; // Value for wet sensor, the lowest possible value the sensor can measure
+
+// Setup pin connection to LCD 16x2 display
 const int rs = 12; // LCD pin rs connected to Arduino digital pin 12
 const int vo = 6; // LCD pin vo connected to Arduino digital pin 6
 const int e = 11; // LCD pin e connected to Arduino digital pin 11
@@ -13,7 +15,8 @@ const int d5 = 4; // LCD pin d5 connected to Arduino digital pin 4
 const int d6 = 3; // LCD pin d6 connected to Arduino digital pin 3
 const int d7 = 2; // LCD pin d7 connected to Arduino digital pin 2
 
-
+// Instantiate LiquidCrystal class (from library) with name lcd
+LiquidCrystal lcd(rs, vo, e, d4, d5, d6, d7); // Instantiate LCD using the pins as arguments to setup the communication between the LCD display and the Arduino Uno board
 
 // Setup prepares and starts the program
 void setup() {
