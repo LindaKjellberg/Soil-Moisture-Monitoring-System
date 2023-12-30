@@ -1,6 +1,7 @@
 
+
 #include <LiquidCrystal.h>  // Include the Adafruit library for the LCD
-#include "secrets.h"  // Include the secret header file with AWS IOT Core certificates
+//#include "secrets.h"  // Include the secret header file with AWS IOT Core certificates
 
 
 // Setup values for Capacitive Soil Sensor, this particular sensor has a range of 424 to 796
@@ -56,3 +57,4 @@ void loop() {
  delay(1000);
  */
 }
+
