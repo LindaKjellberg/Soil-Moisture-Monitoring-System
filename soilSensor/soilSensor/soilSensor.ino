@@ -24,6 +24,8 @@ LiquidCrystal lcd(rs, vo, e, d4, d5, d6, d7);  // Instantiate LCD using the pins
 void setup() {
   Serial.begin(9600);  // Initialize the Sketch with 9600 baud rate
   lcd.begin(16, 2);    // Setup the dimensions of number rows and columns on the LCD
+
+  delay(2000);  // Two seconds delay to ensure the LCD is setup properly
 }
 
 // Loop through the functions and actions the program should perform
