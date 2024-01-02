@@ -1,5 +1,4 @@
 
-
 #include <LiquidCrystal.h>  // Include the Adafruit library for the LCD
 //#include "secrets.h"  // Include the secret header file with AWS IOT Core certificates
 
@@ -59,4 +58,3 @@ void loop() {
  delay(1000);
  */
 }
-
