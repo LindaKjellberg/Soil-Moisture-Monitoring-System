@@ -49,3 +49,4 @@ DISCORD_WEBHOOK_URL=your_discord_webhook_url
 SERIAL_PORT=your_serial_port
 BAUD_RATE=your_baud_rate
 ```
+- Run the script.py script using Python.
