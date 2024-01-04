@@ -5,7 +5,7 @@
 This project involves the creation of a soil moisture monitoring system using an Arduino sketch and a Python script. The Arduino sketch collects soil moisture data from a capacitive soil moisture sensor and displays it on an LCD screen. The Python script reads this data over serial communication and stores it in a local MySQL database table. Sensitive information is stored in a .env file.
 
 
-<img scr="C:\Users\linda\Desktop\Examensarbete\Projekt\soilSensor\soilSensor\Images\sensorSetup.jpg" width="100">
+<img scr="C:/Users/linda/Desktop/Examensarbete/Projekt/soilSensor/soilSensor/Images/sensorSetup.jpg" width="100">
 
 ![](C:/Users/linda/Desktop/Examensarbete/Projekt/soilSensor/soilSensor/Images/sensorSetup.jpg)
 
