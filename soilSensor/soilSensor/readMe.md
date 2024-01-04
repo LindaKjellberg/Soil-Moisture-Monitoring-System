@@ -76,6 +76,12 @@ BAUD_RATE=your_baud_rate
 - The script will start reading data from the Arduino and storing it in the MySQL database.
 - If the soil humidity falls below the specified threshold, a notification will be sent to the configured Discord channel.
 
+## Notes
+
+- Make sure to handle sensitive information securely and avoid sharing it publicly.
+- Adjust the hardware connections based on your specific setup.
+- Customize the database and Discord webhook configurations according to your environment.
+
 
 ## Troubleshooting Tips:
 
