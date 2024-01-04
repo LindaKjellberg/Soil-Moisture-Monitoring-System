@@ -58,10 +58,10 @@ BAUD_RATE=your_baud_rate
 
 ### Configure Database:
 
-- Set up a local MySQL database with the specified user, password, host, and database name.
-- Update the .env file with your database configuration.
+- Set up a local MySQL database with the specified `user`, `password`, `host`, and `database name`.
+- Update the `.env` file with your database configuration.
 
 ### Configure Discord Webhook:
 
 - Create a Discord webhook in your Discord server.
-- Copy the webhook URL and update the DISCORD_WEBHOOK_URL in the .env file.
+- Copy the webhook URL and update the `DISCORD_WEBHOOK_URL` in the `.env` file.
