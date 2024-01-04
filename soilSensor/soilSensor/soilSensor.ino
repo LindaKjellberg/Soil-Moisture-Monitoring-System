@@ -27,6 +27,7 @@ void setup() {
 
 // Loop through the functions and actions the program should perform
 void loop() {
+  // Configure pin connection to the Capacitive Soil Sensor
   int sensorValue = analogRead(A0);  // Get the measured sensor value as an integer from the analog pin A0
 
   // Translate the range of values to a scale of 0% to 100% for a more evident value representation
