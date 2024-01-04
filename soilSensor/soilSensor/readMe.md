@@ -94,4 +94,4 @@ BAUD_RATE=your_baud_rate
 - Verify that the hardware connections match the pin configurations in the Arduino sketch.
 - Make sure the MySQL database is running and accessible with the provided credentials.
 
-Feel free to reach out if you encounter any issues or have further questions!
+Feel free to contribute, report issues, or suggest improvements!
