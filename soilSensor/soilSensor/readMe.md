@@ -23,6 +23,7 @@ This project involves the creation of a soil moisture monitoring system using an
 ### 1. Arduino Sketch:
 
 - Upload the `soilSensor.ino` file to your Arduino Uno R3 board using the Arduino IDE.
+- Configure the setup of the `board type`, `COM port` and `baudrate` to match your environment.
 - Connect the Capacitive Soil Moisture Sensor and LCD display to the designated pins as specified in the sketch:
 
 ```cpp
@@ -39,9 +40,11 @@ const int d7 = 2;
 IMAGE
 
 
-### 1. Python Script:
+### 2. Python Script:
 
 - Install required Python packages: `serial`, `python-dotenv`, `mysql-connector-python`, `requests`.
+- Configure the `COM port` and `baudrate` in the `.env` file to the same as the Arduino uses.
+- Configure the `HUMIDITY_THRESHOLD` to desiresd value.
 - Create a `.env` file with the following variables and their values:
 
 ```makefile
@@ -53,15 +56,33 @@ DISCORD_WEBHOOK_URL=your_discord_webhook_url
 SERIAL_PORT=your_serial_port
 BAUD_RATE=your_baud_rate
 ```
-- Run the script.py script using Python.
 
 
-### Configure Database:
+### 3. Configure Database:
 
 - Set up a local MySQL database with the specified `user`, `password`, `host`, and `database name`.
 - Update the `.env` file with your database configuration.
 
-### Configure Discord Webhook:
+### 4. Configure Discord Webhook:
 
 - Create a Discord webhook in your Discord server.
 - Copy the webhook URL and update the `DISCORD_WEBHOOK_URL` in the `.env` file.
+
+### 5. Run the Project:
+- Upload and run the `soilSensor.ino` sketch to the Arduino board
+- Run the Python script by executing the following command in the terminal:
+```python script.py```
+
+- The script will start reading data from the Arduino and storing it in the MySQL database.
+- If the soil humidity falls below the specified threshold, a notification will be sent to the configured Discord channel.
+
+
+## Troubleshooting Tips:
+
+- Ensure that the Arduino is properly connected, and the `COM port` is selected correctly in both the Arduino IDE and the `.env` file.
+- Check for any error messages in the Arduino IDE's serial monitor and the Python script's terminal.
+- Note that while running the serial monitor can not be used in the Arduino IDE, as it is being used for communicating between the Arduino sketch and Python script. You can monitor the output in the Python script's terminal.
+- Verify that the hardware connections match the pin configurations in the Arduino sketch.
+- Make sure the MySQL database is running and accessible with the provided credentials.
+
+Feel free to reach out if you encounter any issues or have further questions!
