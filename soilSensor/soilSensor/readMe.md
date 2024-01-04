@@ -6,7 +6,8 @@ This project involves the creation of a soil moisture monitoring system using an
 
 
 <img scr="soilSensor\soilSensor\sensorSetup.jpg" width="100">
-![](soilSensor\soilSensor\Images\sensorSetup.JPG)
+
+![](soilSensor/soilSensor/Images/sensorSetup.JPG)
 
 ### Hardware Components
 
