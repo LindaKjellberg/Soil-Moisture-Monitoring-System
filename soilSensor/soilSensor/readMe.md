@@ -5,7 +5,7 @@
 This project involves the creation of a soil moisture monitoring system using an Arduino sketch and a Python script. The Arduino sketch collects soil moisture data from a capacitive soil moisture sensor and displays it on an LCD screen. The Python script reads this data over serial communication and stores it in a local MySQL database table. Sensitive information is stored in a .env file.
 
 
-![](soilSensor\soilSensor\Images\sensorSetup.jpg)
+![](Images\sensorSetup.jpg)
 
 ### Hardware Components
 
@@ -64,6 +64,16 @@ BAUD_RATE=your_baud_rate
 
 - Set up a local MySQL database with the specified `user`, `password`, `host`, and `database name`.
 - Update the `.env` file with your database configuration.
+
+```SQL 
++-----------+-----------+------+-----+-------------------+-------------------+
+| Field     | Type      | Null | Key | Default           | Extra             |
++-----------+-----------+------+-----+-------------------+-------------------+
+| id        | int       | NO   | PRI | NULL              | auto_increment    |
+| humidity  | int       | YES  |     | NULL              |                   |
+| timestamp | timestamp | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-----------+-----------+------+-----+-------------------+-------------------+
+```
 
 ### 4. Configure Discord Webhook:
 
