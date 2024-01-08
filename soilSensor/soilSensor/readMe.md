@@ -39,7 +39,7 @@ const int d7 = 2;
 int sensorValue = analogRead(A0);
 ```
 
-IMAGE
+![](Images\illustration.png)
 
 
 ### 2. Python Script:
