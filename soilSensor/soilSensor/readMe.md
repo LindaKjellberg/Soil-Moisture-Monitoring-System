@@ -23,7 +23,10 @@ This project involves the creation of a soil moisture monitoring system using an
 
 - Upload the `soilSensor.ino` file to your Arduino Uno R3 board using the Arduino IDE.
 - Configure the setup of the `board type`, `COM port` and `baudrate` to match your environment.
-- Connect the Capacitive Soil Moisture Sensor to `Ground`, `5V` and `A1`.
+- Connect the Capacitive Soil Moisture Sensor to the Arduino, with the following connections:
+    - Ground to `Ground`
+    - 5V to `5V` 
+    - Signal pin to `A1`
 - Connect the LCD display to the designated pins as specified in the sketch:
 
 ```cpp
@@ -47,7 +50,7 @@ int sensorValue = analogRead(A0);
 
 - Install required Python packages: `serial`, `python-dotenv`, `mysql-connector-python`, `requests`.
 - Configure the `COM port` and `baudrate` in the `.env` file to the same as the Arduino uses.
-- Configure the `HUMIDITY_THRESHOLD` to desiresd value.
+- Configure the `HUMIDITY_THRESHOLD` to desired value. 
 - Create a `.env` file with the following variables and their values:
 
 ```makefile
@@ -108,7 +111,7 @@ And when the project is running the data output will look like this:
 - The script will start reading data from the Arduino and storing it in the MySQL database.
 - If the soil humidity falls below the specified threshold, a notification will be sent to the configured Discord channel.
 
-## Notes
+## Notes:
 
 - Make sure to handle sensitive information securely and avoid sharing it publicly.
 - Adjust the hardware connections based on your specific setup.
@@ -119,8 +122,12 @@ And when the project is running the data output will look like this:
 
 - Ensure that the Arduino is properly connected, and the `COM port` is selected correctly in both the Arduino IDE and the `.env` file.
 - Check for any error messages in the Arduino IDE's serial monitor and the Python script's terminal.
-- Note that while running the serial monitor can not be used in the Arduino IDE, as it is being used for communicating between the Arduino sketch and Python script. You can monitor the output in the Python script's terminal.
+- Note that while running, the serial monitor can not be used in the Arduino IDE as it is being used for communicating between the Arduino sketch and the Python script. You can monitor the output in the Python script's terminal.
 - Verify that the hardware connections match the pin configurations in the Arduino sketch.
 - Make sure the MySQL database is running and accessible with the provided credentials.
+
+## Credits:
+
+Credit goes to similar projects and the open source community, thanks to anyone who shares their knowledge and passion!
 
 Feel free to contribute, report issues, or suggest improvements!
