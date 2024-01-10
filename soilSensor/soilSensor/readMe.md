@@ -65,6 +65,21 @@ BAUD_RATE=your_baud_rate
 
 - Set up a local MySQL database with the specified `user`, `password`, `host`, and `database name`.
 - Update the `.env` file with your database configuration.
+- Use these commands to setup the MySQL database:
+
+```SQL
+CREATE DATABASE `planthealthdb` 
+
+CREATE TABLE `sensor_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `humidity` int DEFAULT NULL,
+  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+)
+```
+
+The database table will be structured like this:
+
 
 ```SQL 
 +-----------+-----------+------+-----+-------------------+-------------------+
