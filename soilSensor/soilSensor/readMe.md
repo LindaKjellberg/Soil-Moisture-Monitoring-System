@@ -23,7 +23,8 @@ This project involves the creation of a soil moisture monitoring system using an
 
 - Upload the `soilSensor.ino` file to your Arduino Uno R3 board using the Arduino IDE.
 - Configure the setup of the `board type`, `COM port` and `baudrate` to match your environment.
-- Connect the Capacitive Soil Moisture Sensor  and LCD display to the designated pins as specified in the sketch:
+- Connect the Capacitive Soil Moisture Sensor to `Ground`, `+5V` and `A1`.
+- Connect the LCD display to the designated pins as specified in the sketch:
 
 ```cpp
 // Setup pin connection to LCD 16x2 display
