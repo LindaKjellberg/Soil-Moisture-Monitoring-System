@@ -128,6 +128,6 @@ And when the project is running the data output will look like this:
 
 ## Credits:
 
-Credit goes to similar projects and the open source community, thanks to anyone who shares their knowledge and passion!
+Credit goes to similar projects and to the open source community. Thanks to anyone who shares their knowledge and passion!
 
 Feel free to contribute, report issues, or suggest improvements!
