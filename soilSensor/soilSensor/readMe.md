@@ -91,6 +91,10 @@ The database table will be structured like this:
 +-----------+-----------+------+-----+-------------------+-------------------+
 ```
 
+And when the project is running the data output will look like this:
+
+![](Images/mysql_table2_github.jpg)
+
 ### 4. Configure Discord Webhook:
 
 - Create a Discord webhook in your Discord server.
